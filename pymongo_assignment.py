@@ -49,3 +49,7 @@ for x in mycol.find():
 myQuery = {"age": 30}
 newValues = {"$set": {"age": 34}}
 mycol.update_one(myQuery, newValues)
+
+#deletes all documents in the customers collection.
+x = mycol.delete_many({})
+print(x.deleted_count, " documents deleted.")
