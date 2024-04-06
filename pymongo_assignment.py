@@ -44,3 +44,8 @@ x = mycol.insert_many([customerOne, customerTwo, customerThree])
 #uses a For Loop to find and print all three documents.
 for x in mycol.find():
   print(x)
+
+#updates one document.
+myQuery = {"age": 30}
+newValues = {"$set": {"age": 34}}
+mycol.update_one(myQuery, newValues)
