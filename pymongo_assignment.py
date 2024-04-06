@@ -53,3 +53,7 @@ mycol.update_one(myQuery, newValues)
 #deletes all documents in the customers collection.
 x = mycol.delete_many({})
 print(x.deleted_count, " documents deleted.")
+
+#Test Scripts: Check if three documents were created, one document updatded, and three documents deleted.
+
+#GenAI Used and Prompts: None.
